@@ -1,0 +1,24 @@
+{
+  "name": "gd-api",
+  "version": "1.0.0",
+  "description": "Geometry Dash library to interact with RobTop's and other servers!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natsuyuchn/gd-api.git"
+  },
+  "keywords": [
+    "geometry-dash",
+    "gd",
+    "api"
+  ],
+  "author": "natsuyuchn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natsuyuchn/gd-api/issues"
+  },
+  "homepage": "https://github.com/natsuyuchn/gd-api#readme"
+}
