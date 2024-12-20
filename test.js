@@ -5,15 +5,14 @@ const gd = require("./src");
 
     console.log(users);
  */
-    const { levels, users, songs } = await gd.searchLevels({
-        query: "ncs"
-    });
+    let request = await gd.profileInfo(37415);
 
-    for (const level of levels) {
+    console.log(JSON.stringify(request, null, 2));
+/*     for (const level of levels) {
         const creator = users.find(u => u.userID === level.playerID)
         let text = `- ${level.levelName} by ${creator?.username || "-"}`;
         text += `\nSong: ${(songs[level.customSongID])?.name}`
         console.log(text);
         console.log(" - - - - - - - - - - ");
-    }
+    } */
 })()

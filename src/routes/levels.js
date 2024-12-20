@@ -63,9 +63,9 @@ async function searchLevels(params) {
 
     let [levels, users, songs] = data.split("#");
 
-    levels = levels ? levels.split("|").map(l => parseLevel(l)) : [];
-    users = users ? parseLevelUsers(users) : [];
-    songs = songs ? parseSongs(songs) : [];
+    levels = levels.split("|").map(l => parseLevel(l));
+    users = parseLevelUsers(users);
+    songs = parseSongs(songs);
 
     return {
         levels,
