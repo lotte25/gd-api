@@ -174,7 +174,7 @@ const DIFFICULTIES = {
 
 const VERSIONS = {
     gameVersion: 22,
-    binaryVersion: 43
+    binaryVersion: 45
 };
 
 const DEFAULT_SERVER = "https://www.boomlings.com/database";
