@@ -8,7 +8,8 @@ const lengthNames = {
     1: "Short",
     2: "Medium",
     3: "Long",
-    4: "XL"
+    4: "XL",
+    5: "Platformer"
 }
 
 function robtopSplit(string, separator) {
