@@ -5,7 +5,9 @@ const gd = require("./src");
 
     console.log(users);
  */
-    let request = await gd.profileInfo(37415);
+    let request = await gd.searchLevels({
+        query: 18722
+    });
 
     console.log(JSON.stringify(request, null, 2));
 /*     for (const level of levels) {

@@ -8,6 +8,8 @@ async function request(endpoint, data, secret = constants.SECRETS.COMMON) {
         constants.VERSIONS
     );
 
+    console.log(requestData);
+    
     const request = await fetch(`${constants.DEFAULT_SERVER}/${constants.DEFAULT_ENDPOINTS[endpoint]}`, {
         method: "POST",
         headers: constants.DEFAULT_HEADERS_22,
