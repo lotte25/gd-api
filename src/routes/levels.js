@@ -18,8 +18,9 @@ async function searchLevels(params) {
         if (params.difficulties.includes(-2)) {
             params.difficulties = params.difficulties.filter(d =>  d !== -2 && d !== -1);
 
-            searchParams.diff = params.difficulties.length > 1 ? params.difficulties.join(",") : params.difficulties.at(0);
         }
+        
+        searchParams.diff = params.difficulties.length > 1 ? params.difficulties.join(",") : params.difficulties.at(0);
     }
 
     let str = params.query || "";
