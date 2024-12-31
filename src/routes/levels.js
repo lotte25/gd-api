@@ -15,11 +15,10 @@ async function searchLevels(params) {
         searchParams.diff = -2;
         searchParams.demonFilter = params.demonFilter;
     } else if (params.difficulties && params.difficulties.length > 0) {
-        if (params.difficulties.includes(-2)) {
+        if (params.difficulties.includes(-2) && params.difficulties.length > 1) {
             params.difficulties = params.difficulties.filter(d =>  d !== -2 && d !== -1);
-
         }
-        
+
         searchParams.diff = params.difficulties.length > 1 ? params.difficulties.join(",") : params.difficulties.at(0);
     }
 
