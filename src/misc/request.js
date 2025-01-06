@@ -7,8 +7,6 @@ async function request(endpoint, data, secret = constants.SECRETS.COMMON) {
         data, 
         constants.VERSIONS
     );
-
-    console.log(requestData);
     
     const request = await fetch(`${constants.DEFAULT_SERVER}/${constants.DEFAULT_ENDPOINTS[endpoint]}`, {
         method: "POST",
